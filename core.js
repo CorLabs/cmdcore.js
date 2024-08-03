@@ -33,3 +33,4 @@ class env{
         }
     }
 }
+export {cmd,env};
