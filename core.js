@@ -23,7 +23,7 @@ export class env{
         this.cmds.push(cd);
     }
     execute(text){
-        var z = text.split(' ');
+        var z = text.split(':');
 
         for(var i of this.cmds){
             if(i.kwrd == z[0]){
