@@ -1,4 +1,4 @@
-export class cmd{
+class cmd{
     constructor(kwrd,func,sep){
         this.kwrd = kwrd;
         
@@ -12,7 +12,7 @@ export class cmd{
         this.func(ps);
     }
 }
-export class env{
+class env{
     cmds = [];
     constructor(name,desc){
         this.name = name;
