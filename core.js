@@ -1,12 +1,14 @@
 export class cmd{
-    constructor(kwrd,func){
+    constructor(kwrd,func,sep){
         this.kwrd = kwrd;
         
         this.func = func;
-        
+        this.sep = sep;
     }
     exec(param){
-        let ps = param.split(" ");
+        if(sep){
+            let ps = param.split(" ");
+        }
         this.func(ps);
     }
 }
